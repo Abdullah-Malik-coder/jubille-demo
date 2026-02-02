@@ -377,30 +377,41 @@ OEM-ready manufacturing built to meet global buyer standards.                </d
     <div className="pointer-events-none absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-brand-50 to-transparent" />
     <div className="pointer-events-none absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-brand-50 to-transparent" />
 
-    <div className="flex w-max flex-nowrap items-center gap-16 animate-scroll will-change-transform">
-      {/* First set */}
-      {brands.map((b) => (
-        <img
-          key={`a-${b.name}`}
-          src={b.logo}
-          alt={b.name}
-className="h-20 sm:h-24 md:h-28 w-auto object-contain shrink-0 opacity-90 transition hover:opacity-100"
-          loading="lazy"
-        />
-      ))}
-
-      {/* Duplicate set (for seamless loop) */}
-      {brands.map((b) => (
-        <img
-          key={`b-${b.name}`}
-          src={b.logo}
-          alt=""
-          aria-hidden="true"
-className="h-20 sm:h-24 md:h-28 w-auto object-contain shrink-0 opacity-90 transition hover:opacity-100"
-          loading="lazy"
-        />
-      ))}
+  <div className="flex w-max flex-nowrap items-center gap-10 sm:gap-12 md:gap-16 animate-scroll will-change-transform">
+  {/* First set */}
+  {brands.map((b) => (
+    <div
+      key={`a-${b.name}`}
+      className="shrink-0 flex items-center justify-center
+                 h-20 w-36 sm:h-24 sm:w-44 md:h-28 md:w-52"
+    >
+      <img
+        src={b.logo}
+        alt={b.name}
+        loading="lazy"
+        className="max-h-full max-w-full object-contain opacity-90 transition hover:opacity-100"
+      />
     </div>
+  ))}
+
+  {/* Duplicate set */}
+  {brands.map((b) => (
+    <div
+      key={`b-${b.name}`}
+      className="shrink-0 flex items-center justify-center
+                 h-20 w-36 sm:h-24 sm:w-44 md:h-28 md:w-52"
+      aria-hidden="true"
+    >
+      <img
+        src={b.logo}
+        alt=""
+        loading="lazy"
+        className="max-h-full max-w-full object-contain opacity-90 transition hover:opacity-100"
+      />
+    </div>
+  ))}
+</div>
+
   </div>
 </section>
 
