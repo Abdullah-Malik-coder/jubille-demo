@@ -383,7 +383,7 @@ OEM-ready manufacturing built to meet global buyer standards.                </d
     <div
       key={`a-${b.name}`}
       className="shrink-0 flex items-center justify-center
-                 h-20 w-36 sm:h-24 sm:w-44 md:h-28 md:w-52"
+                 h-24 w-36 sm:h-24 sm:w-44 md:h-28 md:w-52"
     >
       <img
         src={b.logo}
@@ -399,7 +399,7 @@ OEM-ready manufacturing built to meet global buyer standards.                </d
     <div
       key={`b-${b.name}`}
       className="shrink-0 flex items-center justify-center
-                 h-20 w-36 sm:h-24 sm:w-44 md:h-28 md:w-52"
+                 h-24 w-36 sm:h-24 sm:w-44 md:h-28 md:w-52"
       aria-hidden="true"
     >
       <img
