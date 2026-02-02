@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowRight, CheckCircle2, ShieldCheck, Factory, Sparkles } from 'lucide-react'
+import { ArrowRight, CheckCircle2, ShieldCheck, GitMerge, Sparkles } from 'lucide-react'
 import Button from '../components/ui/Button.jsx'
 import SectionTitle from '../components/SectionTitle.jsx'
 import { Card, CardBody } from '../components/ui/Card.jsx'
@@ -21,7 +21,7 @@ import ref2 from '../assets/productpage17.png'
 import ref3 from '../assets/productpage4.png'
 import ref4 from '../assets/productpage10.png'
 import ref5 from '../assets/productpage6.png'
-import ref6 from '../assets/productpage7.png'
+import ref6 from '../assets/productpage9.png'
 
 
 const brands = [
@@ -128,7 +128,7 @@ export default function Home() {
         <div className="container-app relative py-16 sm:py-20">
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div>
-              <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-semibold text-white/80">
+              <div className="inline-flex font-mont items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-semibold text-white/80">
                 <ShieldCheck size={16} /> OEM Manufacturing · Global Buyers .
               </div>
       <h1 className="mt-5 font-mont text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
@@ -143,7 +143,7 @@ export default function Home() {
                 {company.intro.blurb}
               </p>
 
-              <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+              <div className="mt-7 flex font-mont flex-col gap-3 sm:flex-row">
                 <Button
                   as="a"
                   href={`mailto:${company.email}?subject=Inquiry%20%E2%80%94%20Jubilee%20Apparel`}
@@ -156,12 +156,12 @@ export default function Home() {
                 </Button>
               </div>
 
-             <div className="mt-7 grid gap-3 sm:grid-cols-2">
+             <div className="mt-7 font-mont font-semibold grid gap-3 sm:grid-cols-2">
   {[
     {
-      icon: <Factory size={18} />,
-      title: "4 Manufacturing Sites",
-      desc: "150,000+ sq. ft. integrated production footprint"
+      icon: <GitMerge size={18} />,
+      title: "End-to-End Control",
+      desc: "Knitting to finishing coordinated under one supply chain"
     },
     {
       icon: <Sparkles size={18} />,
@@ -180,12 +180,12 @@ export default function Home() {
 
         <div className="min-w-0">
           {/* Title */}
-          <div className="text-[15px] font-semibold tracking-[-0.01em] text-white">
+          <div className="text-[15px] font-mont font-semibold tracking-[-0.01em] text-white">
             {item.title}
           </div>
 
           {/* Desc */}
-          <div className="mt-1 text-[13px] leading-relaxed text-white/70">
+          <div className="mt-1 text-[13px]  font-playfair font-semibold leading-relaxed text-white/70">
             {item.desc}
           </div>
         </div>
@@ -200,18 +200,18 @@ export default function Home() {
               <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-soft">
                 <img src={ref2} alt="Jubilee Apparel preview" className="h-[360px] w-full object-cover opacity-90" />
               </div>
-              <div className="pointer-events-none absolute -bottom-5 -left-5 hidden w-72 animate-floaty rounded-2xl border border-white/10 bg-white/5 p-5 text-white shadow-soft backdrop-blur lg:block">
+              <div className="pointer-events-none font-mont absolute -bottom-5 -left-5 hidden w-72 animate-floaty rounded-2xl border border-white/10 bg-white/5 p-5 text-white shadow-soft backdrop-blur lg:block">
                 <div className="flex items-center gap-2 text-sm font-extrabold">
                   <CheckCircle2 size={18} /> Compliance-ready production
                 </div>
-                <div className="mt-2 text-xs text-white/60">
+                <div className="mt-2 text-xs font-playfair text-white/60">
 OEM-ready manufacturing built to meet global buyer standards.                </div>
               </div>
             </div>
           </div>
 
           {/* Stats */}
-          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-4 font-mont font-semibold sm:grid-cols-2 lg:grid-cols-4">
             {stats.map((s) => (
               <StatCard key={s.label} item={s} />
             ))}
@@ -221,11 +221,11 @@ OEM-ready manufacturing built to meet global buyer standards.                </d
 
      {/* Value chain (Timeline teaser — Home) */}
 <section className="bg-white mt-6">
-  <div className="container-app py-16 font-mont font-bold ">
+  <div className="container-app py-16 font-mont font-extrabold ">
     <SectionTitle
       eyebrow="Under one roof"
       title="From fabric to export — under one roof"
-      desc="A streamlined value chain built to reduce handoffs, minimize wastage, and deliver export-ready garments on time."
+      desc="A streamlined value chain built to reduce handoffs and deliver export-ready garments on time."
     />
 
     {/* Timeline / Steps */} 
@@ -262,7 +262,7 @@ OEM-ready manufacturing built to meet global buyer standards.                </d
           },
           {
             title: "Ready to export",
-            desc: "QC, labeling, and pack-ready delivery for global buyers.",
+            desc: "From final approval to shipment staging—everything aligned to buyer requirements.",
             bullets: ["Quality checks", "Labeling & tagging", "Export-ready packing"],
           },
         ].map((step, idx) => (
@@ -301,7 +301,7 @@ OEM-ready manufacturing built to meet global buyer standards.                </d
     </div>
 
     {/* CTA */}
-    <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
+    <div className="mt-10 flex flex-col font-mont font-bold gap-3 sm:flex-row sm:items-center">
       <Button as={Link} to="/capabilities" variant="primary">
         Explore Full Facilities <ArrowRight size={18} />
       </Button>
@@ -310,7 +310,7 @@ OEM-ready manufacturing built to meet global buyer standards.                </d
         Request a quote
       </Button>
 
-      <div className="text-xs text-ink-600 sm:ml-2">
+      <div className="text-xs text-ink-600 font-mont font-extrabold sm:ml-2">
         Prefer email?{" "}
         <a
           href="mailto:info@jubilee-apparel.com"
@@ -362,11 +362,11 @@ OEM-ready manufacturing built to meet global buyer standards.                </d
 {/* Our Satisfied Customers — Full width marquee (no box) */}
 <section className="bg-brand-50 py-16 mt-6">
 <div className="container-app text-center">
-  <h2 className="text-3xl font-extrabold text-ink-900 font-mont">
+  <h2 className="text-3xl font-extrabold text-ink-900 font-mont ">
     Our Satisfied Customers
   </h2>
 
-  <p className="mx-auto mt-2 max-w-2xl text-sm text-ink-700 font-playfair">
+  <p className="mx-auto mt-2 max-w-2xl text-sm font-semibold text-ink-700 font-playfair">
     Brands and sourcing teams we’ve supported with consistent OEM production.
   </p>
 </div>
@@ -384,7 +384,7 @@ OEM-ready manufacturing built to meet global buyer standards.                </d
           key={`a-${b.name}`}
           src={b.logo}
           alt={b.name}
-className="h-16 sm:h-20 md:h-24 w-auto object-contain shrink-0 opacity-90 transition hover:opacity-100"
+className="h-20 sm:h-24 md:h-28 w-auto object-contain shrink-0 opacity-90 transition hover:opacity-100"
           loading="lazy"
         />
       ))}
@@ -396,7 +396,7 @@ className="h-16 sm:h-20 md:h-24 w-auto object-contain shrink-0 opacity-90 transi
           src={b.logo}
           alt=""
           aria-hidden="true"
-className="h-16 sm:h-20 md:h-24 w-auto object-contain shrink-0 opacity-90 transition hover:opacity-100"
+className="h-20 sm:h-24 md:h-28 w-auto object-contain shrink-0 opacity-90 transition hover:opacity-100"
           loading="lazy"
         />
       ))}
@@ -408,14 +408,14 @@ className="h-16 sm:h-20 md:h-24 w-auto object-contain shrink-0 opacity-90 transi
 
       {/* Products preview */}
       <section className="bg-white mt-6">
-        <div className="container-app py-16 font-mont font-bold">
+        <div className="container-app py-16 font-mont font-extrabold">
           <SectionTitle
             eyebrow="Product preview"
-            title="Knits & wovens for global buyers"
-            desc="This is a showcase grid. You can add as many products as you like — the layout stays responsive for desktop and mobile."
+            title="Built for Repeat Orders"
+            desc="Scalable production with controlled processes—so your styles stay consistent from sample to bulk."
           />
 
-          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-10 grid font-playfair font-semibold gap-5 md:grid-cols-2 lg:grid-cols-3">
             {products.slice(0, 3).map((p) => (
               <ProductPreviewCard key={p.id} p={p} />
             ))}
@@ -423,10 +423,10 @@ className="h-16 sm:h-20 md:h-24 w-auto object-contain shrink-0 opacity-90 transi
 
           <div className="mt-10 flex flex-col items-start justify-between gap-4 rounded-2xl border border-ink-900/10 bg-ink-900 p-8 text-white shadow-soft md:flex-row md:items-center">
             <div>
-              <div className="text-lg font-extrabold">Need a custom program or bulk quote?</div>
-              <div className="mt-1 text-sm text-white/70">Share your tech pack, quantities, and target dates — we’ll respond fast.</div>
+              <div className="text-lg  font-mont font-extrabold">Need a custom program or bulk quote?</div>
+              <div className="mt-1 font-mont font-semibold text-sm text-white/70">Share your tech pack, quantities, and target dates — we’ll respond fast.</div>
             </div>
-            <div className="flex flex-col gap-3 sm:flex-row">
+            <div className="flex flex-col font-mont font-semibold gap-3 sm:flex-row">
               <Button as={Link} to="/products" variant="secondary">Explore products</Button>
               <Button as="a" href={`mailto:${company.email}?subject=RFQ%20%E2%80%94%20Jubilee%20Apparel`} variant="primary">
                 Send RFQ <ArrowRight size={18} />
