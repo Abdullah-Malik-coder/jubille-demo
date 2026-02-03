@@ -675,7 +675,7 @@ export default function Products() {
       
  {
         id: "p10",
-        name: "Sherpa Zipper Hoodie",
+        name: "Fleece Sherpa Zipper Hoodie",
                 family:"Fleece",
         category: "SHERPA ZIPPER HOODIES",
         image: p10,
