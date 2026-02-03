@@ -1,5 +1,6 @@
 
 
+
 import React, { useMemo, useState, useEffect } from "react";
 import { Search, Mail, X, Phone, MessageSquareText, Tag } from "lucide-react";
 
@@ -10,16 +11,13 @@ import p3 from "../assets/productpage3.png";
 import p4 from "../assets/productpage4.png";
 import p5 from "../assets/productpage5.png";
 import p6 from "../assets/productpage6.png";
-import p7 from "../assets/productpage78.png";
+import p7 from "../assets/productpage7.png";
 import p8 from "../assets/productpage8.png";
 import p9 from "../assets/productpage9.png";
 import p10 from "../assets/productpage10.png";
 import p11 from "../assets/productpage11.png";
 import p12 from "../assets/productpage12.png";
 import p13 from "../assets/productpage13.png";
-import p14 from "../assets/productpage14.png";
-import p15 from "../assets/productpage15.png";
-import p16 from "../assets/productpage16.png";
 import p17 from "../assets/productpage17.png";
 import p18 from "../assets/productpage18.png";
 import p19 from "../assets/productpage19.png";
@@ -77,8 +75,6 @@ const families = [
   "Thermal",
   "Nantucket",
   "Polyester",
-  "Woven",
-  "Sherpa",
 ];
 
 // ---------- Helpers ----------
@@ -433,57 +429,6 @@ export default function Products() {
 
       },
       {
-        id: "p4",
-        name: "Fleece Pullover Hoodie",
-        family:"Fleece",
-        category: "FLEECE PULLOVER HOODIES",
-        image: p4,
-        description: "Mid-weight fleece hoodie made for comfort, durability, and brand-ready trims.",
-       colors: [
-  // Greens (all together)
-  { name: "GREEN", hex: "#16A34A" },
-  { name: "GREEN HEATHER", hex: "#6B7F73" },
-  { name: "FOREST", hex: "#14532D" },
-  { name: "HUNTER GREEN", hex: "#1F3B2C" },
-
-  // Reds (all together)
-  { name: "RED", hex: "#DC2626" },
-  { name: "BURGUNDY", hex: "#7F1D1D" },
-  // Neutrals
-  { name: "BLACK", hex: "#111827" },
-  { name: "WHITE", hex: "#FFFFFF" },
-  { name: "SAND", hex: "#EADBC8" },
-  { name: "OATMEAL", hex: "#E7DCC8" },
-
-  // Greys (all together)
-  { name: "CHARCOAL", hex: "#374151" },
-  { name: "GUN METAL", hex: "#374151" },
-  { name: "HEATHER GREY", hex: "#9CA3AF" },
-  { name: "DENIM HEATHER", hex: "#4B5563" },
-
-  // Blues (all together)
-  { name: "NAVY", hex: "#0B1F3A" },
-  { name: "ROYAL", hex: "#1D4ED8" },
-  { name: "LIGHT BLUE", hex: "#60A5FA" },
-
-  // Pinks (together)
-  { name: "PINK", hex: "#EC4899" },
-  { name: "BABY PINK", hex: "#FBCFE8" },
-
-  // Purple
-  { name: "PURPLE", hex: "#7C3AED" },
-
-  // Warm tones
-  { name: "YELLOW", hex: "#FACC15" },
-  { name: "ORANGE", hex: "#F97316" },
-
-  // Browns (together)
-  { name: "CEDAR BROWN", hex: "#6B3F2A" },
-  { name: "CHOCLATE", hex: "#4E2A1E" },
-       ]
-
-      },
-      {
         id: "p5",
         name: "Fleece Zipper Hoodie",
         family:"Fleece",
@@ -534,6 +479,58 @@ export default function Products() {
 ]
 
       },
+      {
+        id: "p4",
+        name: "Fleece Pullover Hoodie",
+        family:"Fleece",
+        category: "FLEECE PULLOVER HOODIES",
+        image: p4,
+        description: "Mid-weight fleece hoodie made for comfort, durability, and brand-ready trims.",
+       colors: [
+  // Greens (all together)
+  { name: "GREEN", hex: "#16A34A" },
+  { name: "GREEN HEATHER", hex: "#6B7F73" },
+  { name: "FOREST", hex: "#14532D" },
+  { name: "HUNTER GREEN", hex: "#1F3B2C" },
+
+  // Reds (all together)
+  { name: "RED", hex: "#DC2626" },
+  { name: "BURGUNDY", hex: "#7F1D1D" },
+  // Neutrals
+  { name: "BLACK", hex: "#111827" },
+  { name: "WHITE", hex: "#FFFFFF" },
+  { name: "SAND", hex: "#EADBC8" },
+  { name: "OATMEAL", hex: "#E7DCC8" },
+
+  // Greys (all together)
+  { name: "CHARCOAL", hex: "#374151" },
+  { name: "GUN METAL", hex: "#374151" },
+  { name: "HEATHER GREY", hex: "#9CA3AF" },
+  { name: "DENIM HEATHER", hex: "#4B5563" },
+
+  // Blues (all together)
+  { name: "NAVY", hex: "#0B1F3A" },
+  { name: "ROYAL", hex: "#1D4ED8" },
+  { name: "LIGHT BLUE", hex: "#60A5FA" },
+
+  // Pinks (together)
+  { name: "PINK", hex: "#EC4899" },
+  { name: "BABY PINK", hex: "#FBCFE8" },
+
+  // Purple
+  { name: "PURPLE", hex: "#7C3AED" },
+
+  // Warm tones
+  { name: "YELLOW", hex: "#FACC15" },
+  { name: "ORANGE", hex: "#F97316" },
+
+  // Browns (together)
+  { name: "CEDAR BROWN", hex: "#6B3F2A" },
+  { name: "CHOCLATE", hex: "#4E2A1E" },
+       ]
+
+      },
+      
       {
         id: "p6",
         name: "Fleece Sweatshirt",
@@ -616,36 +613,6 @@ export default function Products() {
 
       },
       {
-        id: "p8",
-        name: "Nantucket Zipper Hoodie",
-                family:"Nantucket",
-        category: "NANTUCKET ZIPPER HOODIES",
-        image: p8,
-        description: "Premium zip hoodie with strong seams and consistent trims—ready for private label.",
-  colors: [
-  // Greys / Neutrals
-  { name: "SALT&PEPPER", hex: "#6B7280" },
-  { name: "CHARCOA", hex: "#374151" },
-
-  // Blues
-  { name: "BLUE MELANGE", hex: "#6B8FBF" },
-
-  // Greens
-  { name: "SEA GRASS", hex: "#84A98C" },
-
-  // Yellows
-  { name: "BANANA YELLOW", hex: "#FDE047" },
-
-  // Pinks / Corals
-  { name: "SOFT PINK", hex: "#F9A8D4" },
-  { name: "CORAL", hex: "#FB7185" },
-
-  // Purples
-  { name: "ICELAVENDAR", hex: "#DDD6FE" },
-]
-
-      },
-      {
         id: "p9",
         name: "Nantucket Sweatshirt",
                 family:"Nantucket",
@@ -675,10 +642,41 @@ export default function Products() {
 ]
 
       },
+      {
+        id: "p8",
+        name: "Nantucket Zipper Hoodie",
+                family:"Nantucket",
+        category: "NANTUCKET ZIPPER HOODIES",
+        image: p8,
+        description: "Premium zip hoodie with strong seams and consistent trims—ready for private label.",
+  colors: [
+  // Greys / Neutrals
+  { name: "SALT&PEPPER", hex: "#6B7280" },
+  { name: "CHARCOA", hex: "#374151" },
+
+  // Blues
+  { name: "BLUE MELANGE", hex: "#6B8FBF" },
+
+  // Greens
+  { name: "SEA GRASS", hex: "#84A98C" },
+
+  // Yellows
+  { name: "BANANA YELLOW", hex: "#FDE047" },
+
+  // Pinks / Corals
+  { name: "SOFT PINK", hex: "#F9A8D4" },
+  { name: "CORAL", hex: "#FB7185" },
+
+  // Purples
+  { name: "ICELAVENDAR", hex: "#DDD6FE" },
+]
+
+      },
+      
  {
         id: "p10",
         name: "Sherpa Zipper Hoodie",
-                family:"Sherpa",
+                family:"Fleece",
         category: "SHERPA ZIPPER HOODIES",
         image: p10,
         description: "Sherpa-lined zip hoodie for warmth, comfort, and durable construction.",
@@ -841,49 +839,7 @@ export default function Products() {
 
         ],
       },
-      {
-        id: "p14",
-        name: "Medical Scrubs Set",
-                family:"Polyester",
-        category: "MEDICAL SCRUBS TOP & PANTS",
-        image: p14,
-        description: "Scrubs designed for institutional supply with consistent sizing, comfort, and clean finishing.",
-        colors: [
-          { name: "PINK", hex: "#EC4899" },
-          { name: "GREEN", hex: "#16A34A" },
-          { name: "BLUE", hex: "#6B8FBF" },
-        ],
-      },
-      {
-        id: "p15",
-        name: "Safety Vest",
-        family:"Polyester",
-        category: "SAFETY VEST",
-        image: p15,
-        description: "High-visibility vest option for workwear programs with reliable stitching and export packing.",
-        colors: [
-    
-                      { name: "SAFETY GREEN", hex: "#39FF14" },
-                  { name: "SAFETY ORANGE", hex: "#FF6A00" },
-
-        ],
-      },
-
-      {
-        id: "p16",
-        name: "Nebraska Polyester Woven Pants",
-        family: "Woven",
-        category: "NEBRASKA POLYSTER WOVEN PANTS",
-        image: p16,
-        description:
-          "Polyester woven pants built for everyday durability—ideal for bulk OEM programs.",
-        colors: [{ name: "MILITARY GREEN", hex: "#556B2F" },
-          { name: "CHARCOAL", hex: "#374151" },
-          { name: "NAVY", hex: "#0B1F3A" },
-        
-          { name: "BLACK", hex: "#111827" },
-        ],
-      },
+      
 
       {
         id: "p17",
