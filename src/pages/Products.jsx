@@ -854,7 +854,7 @@ import p3 from "../assets/productpage3.png";
 import p4 from "../assets/productpage4.png";
 import p5 from "../assets/productpage5.png";
 import p6 from "../assets/productpage6.png";
-import p7 from "../assets/productpage7.png";
+import p7 from "../assets/productpage78.png";
 import p8 from "../assets/productpage8.png";
 import p9 from "../assets/productpage9.png";
 import p10 from "../assets/productpage10.png";
