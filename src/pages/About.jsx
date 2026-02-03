@@ -1,3 +1,5 @@
+
+
 import React from "react";
 import { Package, BadgeCheck } from "lucide-react";
 import { company } from "../data/company.js";
@@ -22,29 +24,20 @@ export default function About() {
 
       {/* CONTENT */}
       <section className="bg-white">
-        <div className="container-app py-14">
+        <div className="container-app py-14 ">
           {/* ✅ Row 1: Company introduction (left text) + Image (right) */}
-          <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
+          <div className="grid gap-10 lg:grid-cols-2 mt-5 lg:items-start">
             <div>
-              <h3 className="text-xl font-extrabold text-ink-900 font-mont">
+              <h3 className="text-2xl font-extrabold text-ink-900 font-mont underline underline-offset-8 decoration-2">
                 Company introduction
               </h3>
-              <p className="mt-3 text-sm leading-6 text-ink-700 font-playfair">
+              <p className="mt-4 text-lg font-medium leading-6 text-ink-700 font-playfair">
                 {company.intro.blurb}
               </p>
-
-              {/* ✅ Added ONE good section (new) */}
-              <div className="mt-8 rounded-2xl border border-ink-900/10 bg-ink-50 p-6">
-                <div className="flex items-center gap-2 text-sm font-extrabold text-ink-900 font-mont">
-                  <BadgeCheck size={18} className="text-brand-700" />
-                  Compliance & buyer confidence
-                </div>
-                <p className="mt-2 text-sm text-ink-700 font-playfair">
-                  Built around buyer expectations—documentation, measurement checks, and
-                  packing discipline that supports audits, inspections, and smooth
-                  handover for export programs.
-                </p>
-              </div>
+<p className="mt-4 text-lg leading-6 font-medium text-ink-700 font-playfair">
+                {company.intro.blurbs}
+              </p>
+              
             </div>
 
             <div className="space-y-5">
@@ -73,37 +66,21 @@ export default function About() {
 
             {/* Right: History + Brand-ready production */}
             <div>
-              <h3 className="text-xl font-extrabold text-ink-900 font-mont">
-                History
-              </h3>
-              <p className="mt-3 text-sm leading-6 text-ink-700 font-playfair">
+               <h3 className="text-2xl font-extrabold text-ink-900 font-mont underline underline-offset-8 decoration-2">
+    History
+  </h3>
+              <p className="mt-4 text-lg  font-medium leading-6 text-ink-700 font-playfair">
                 {company.intro.history}
               </p>
-
-              <div className="mt-8 rounded-2xl border border-ink-900/10 bg-ink-50 p-6">
-                <div className="flex items-center gap-2 text-sm font-extrabold text-ink-900 font-mont">
-                  <Package size={18} className="text-brand-700" />
-                  Brand-Ready Production
-                </div>
-                <p className="mt-2 text-sm text-ink-700 font-playfair">
-                  OEM aligned workflows for private label—custom trims, labels, hangtags,
-                  polybags, and export-ready packing to support retail and e-commerce
-                  presentation.
-                </p>
-              </div>
+  <p className="mt-4 text-lg leading-6 font-medium text-ink-700 font-playfair">
+                {company.intro.historys}
+              </p>
+              
             </div>
           </div>
 
           {/* ✅ Small closing note (simple + trendy, not “intro cards”) */}
-          <div className="mt-12 rounded-2xl border border-ink-900/10 bg-white p-7 shadow-soft">
-            <div className="text-sm font-extrabold text-ink-900 font-mont">
-              Built for long-term sourcing
-            </div>
-            <p className="mt-2 text-sm leading-6 text-ink-700 font-playfair">
-              Jubilee is structured to support repeat programs—consistent specs, clean
-              workmanship, and buyer-friendly communication from sampling to shipment.
-            </p>
-          </div>
+          
         </div>
       </section>
     </div>
