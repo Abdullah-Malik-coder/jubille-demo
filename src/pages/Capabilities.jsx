@@ -13,7 +13,7 @@ import emb5 from "../assets/ref-3.png";
 const embellishment = [
   {
     id: "embroidery",
-    title: "Embroidery",
+    title: "EMBROIDERY",
     body:
       "Full-service embroidery for all garment types—logos, monograms, patches, and decorative stitching with clean finishing and consistent quality.",
     highlight: "All embroidery styles • Placement & thread matching support",
@@ -26,54 +26,54 @@ const embellishment = [
   },
   {
     id: "screen",
-    title: "Screen Printing",
+    title: "SCREEN PRINTING (Oval)",
     body:
       "End-to-end screen printing with consistent shade, coverage, and wash performance—supported from sampling to bulk production.",
     highlight: "Multi-color capable • Quality checked before packing",
     highlightImage: emb2,
     metrics: [
-      { k: "Capability", v: "Multi-color" },
+      { k: "Machines", v: "Qty 1" },
       { k: "Finish", v: "Solid coverage" },
-      { k: "Program", v: "Sampling → bulk" },
+      { k: "Capacity/Day", v: "10,000 Pcs " },
     ],
   },
   {
     id: "dtg",
-    title: "DTG Print",
+    title: "DTG PRINTING",
     body:
       "High-resolution DTG printing for detailed artwork and smooth hand-feel—ideal for quick approvals, sampling, and smaller production runs.",
     highlight: "High detail output • Fast concept approval support",
     highlightImage: emb3,
     metrics: [
-      { k: "Detail", v: "High resolution" },
+      { k: "Machines", v: "Qty 2" },
       { k: "Turnaround", v: "Fast setup" },
-      { k: "Runs", v: "Short + sampling" },
+      { k: "Capacity/Day", v: "2500 Pcs" },
     ],
   },
   {
-    id: "dtf",
-    title: "DTF Print",
+    id: "dtg",
+    title: "DTG PRINTING BASIC & FLUROSCENT",
     body:
       "DTF printing for vibrant graphics and reliable durability—works across a wide range of fabrics, blends, and product categories.",
     highlight: "Vibrant & durable • Broad fabric compatibility",
     highlightImage: emb4,
     metrics: [
-      { k: "Compatibility", v: "Multi-fabric" },
+      { k: "Machines", v: "Qty 4" },
       { k: "Look", v: "Crisp graphics" },
-      { k: "Durability", v: "Wash-ready" },
+      { k: "Capacity/Day", v: "7000 Pcs" },
     ],
   },
   {
     id: "uvdtf",
-    title: "UV DTF",
+    title: "UV DTF PRINTING",
     body:
       "UV DTF branding for premium presentation—clean transfers for trims, packaging elements, labels, and special applications as required by the program.",
     highlight: "Premium branding finish • Program-based applications",
     highlightImage: emb5,
     metrics: [
-      { k: "Finish", v: "Gloss / matte" },
+      { k: "Machines", v: "Qty 1" },
       { k: "Use", v: "Brand presentation" },
-      { k: "Support", v: "Custom requests" },
+      { k: "Capacity/Day", v: "1200 Patches" },
     ],
   },
 ];
@@ -125,7 +125,7 @@ export default function Capabilities() {
       {/* HERO */}
       <section className="bg-ink-900">
         <div className="container-app py-14 text-center">
-          <div className="inline-flex items-center gap-2 font-playfair rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-semibold text-white/80 mt-3">
+          <div className="inline-flex items-center gap-2 font-mont rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-semibold text-white/80 mt-3">
             Manufacturing Facility
           </div>
 
