@@ -1,7 +1,7 @@
 export const products = [
     {
     id: 'T-SHIRT',
-    name: 'Polyester T-Shirts & Half Sleeve',
+    name: 'T-Shirts',
     category: 'T-SHIRT',
     description:
       'Soft, breathable T-shirts built for consistent fit, clean finishing, and dependable bulk production.',
