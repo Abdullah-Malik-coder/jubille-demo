@@ -221,19 +221,20 @@ OEM-ready manufacturing built to meet global buyer standards.                </d
 
      {/* Value chain (Timeline teaser — Home) */}
 <section className="bg-white mt-6">
-  <div className="container-app py-16 font-mont font-extrabold ">
+  <div className="container-app py-16 font-mont font-extrabold">
     <SectionTitle
-      eyebrow="Under one roof"
+      eyebrow="Manufacturing Under One Roof"
       title="From fabric to export — under one roof"
       desc="A streamlined value chain built to reduce handoffs and deliver export-ready garments on time."
     />
 
-    {/* Timeline / Steps */} 
+    {/* Timeline / Steps */}
     <div className="relative mt-10">
       {/* connector line (desktop) */}
       <div className="absolute left-0 right-0 top-7 hidden h-px bg-ink-900/50 lg:block" />
 
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-6">
+      {/* ✅ 5 steps => 5 columns on lg (so the line doesn't look "extra") */}
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
         {[
           {
             title: "Knitting",
@@ -256,11 +257,6 @@ OEM-ready manufacturing built to meet global buyer standards.                </d
             bullets: ["Auto-trim support", "Clean seams", "Consistent sizing"],
           },
           {
-            title: "Stitching (Wovens)",
-            desc: "Dedicated woven unit for versatile woven categories.",
-            bullets: ["Workwear & casual", "Stable construction", "Production discipline"],
-          },
-          {
             title: "Ready to export",
             desc: "From final approval to shipment staging—everything aligned to buyer requirements.",
             bullets: ["Quality checks", "Labeling & tagging", "Export-ready packing"],
@@ -280,12 +276,13 @@ OEM-ready manufacturing built to meet global buyer standards.                </d
               Step {idx + 1}
             </div>
 
-            <div className="mt-3 text-sm font-extrabold text-ink-900">
+            {/* ✅ ONLY heading centered */}
+            <div className="mt-3 text-sm font-extrabold text-ink-900 text-center">
               {step.title}
             </div>
-            <div className="mt-2 text-xs leading-5 text-ink-700">
-              {step.desc}
-            </div>
+
+            {/* keep rest as-is (left/aligned) */}
+            <div className="mt-2 text-xs leading-5 text-ink-700">{step.desc}</div>
 
             <ul className="mt-4 space-y-2 text-xs text-ink-700">
               {step.bullets.map((b) => (
@@ -322,6 +319,7 @@ OEM-ready manufacturing built to meet global buyer standards.                </d
     </div>
   </div>
 </section>
+
 
       {/* Capability highlights
       <section className="bg-brand-50">
@@ -377,7 +375,7 @@ OEM-ready manufacturing built to meet global buyer standards.                </d
     <div className="pointer-events-none absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-brand-50 to-transparent" />
     <div className="pointer-events-none absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-brand-50 to-transparent" />
 
-  <div className="flex w-max flex-nowrap items-center gap-10 sm:gap-12 md:gap-16 animate-scroll will-change-transform">
+   <div className="flex w-max flex-nowrap items-center gap-10 sm:gap-12 md:gap-16 animate-scroll will-change-transform">
   {/* First set */}
   {brands.map((b) => (
     <div
