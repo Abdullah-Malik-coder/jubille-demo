@@ -7,7 +7,7 @@ import BookCallModal from "./BookCallModal.jsx";
 
 const nav = [
   { name: "Home", to: "/" },
-  { name: "About", to: "/about" },
+  { name: "Who We Are", to: "/about" },
   { name: "Capabilities", to: "/capabilities" },
   { name: "Products", to: "/products" },
   { name: "Contact", to: "/contact" },
